@@ -1,0 +1,11 @@
+[
+  { "inData": "Russia", "inMap": "Russian Federation" },
+  { "inData": "US", "inMap": "United States" },
+  { "inData": "UK", "inMap": "United Kingdom" },
+  { "inData": "Macau", "inMap": "Macao" },
+  { "inData": "United Arab Emirates", "inMap": "Saudi Arabia" },
+  { "inData": "South Korea", "inMap": "Korea, Republic of" },
+  { "inData": "Taiwan", "inMap": "Taiwan, Province of China" },
+  { "inData": "Mainland China", "inMap": "China" },
+  { "inData": "Iran", "inMap": "Iran, Islamic Republic of" }
+]

@@ -6,17 +6,14 @@ const topo = require('./world.js');
 
 
 router.get('/world', async (req, res) => {
-  console.log('SERVER world')
   res.send(await getData('world'));
 })
 
 router.get('/usa', async (req, res) => {
-  console.log('SERVER usa')
   res.send(await getData('us'));
 })
 
 router.get('/topo', (req, res) => {
-  console.log('SERVER topo')
   res.send(topo);
 })
 
