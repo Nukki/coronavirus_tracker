@@ -2,6 +2,7 @@
 
 const express = require('express');
 const logger = require('./logger');
+const myApi = require('./api');
 
 const argv = require('./argv');
 const port = require('./port');
@@ -14,8 +15,7 @@ const ngrok =
 const { resolve } = require('path');
 const app = express();
 
-// If you need a backend, e.g. an API, add your custom backend-specific middleware here
-// app.use('/api', myApi);
+app.use('/api', myApi);
 
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
@@ -35,7 +35,7 @@ app.get('*.js', (req, res, next) => {
   next();
 });
 
-// Start your app.
+// Start the app.
 app.listen(port, host, async err => {
   if (err) {
     return logger.error(err.message);
